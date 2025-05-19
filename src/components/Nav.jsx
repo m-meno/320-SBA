@@ -6,6 +6,9 @@ export default function Nav(){
             <Link to="/api/v1/characters">
                 <div>Home</div>
             </Link>
+            <Link to="api/v1/characters/avatar">
+                <div>Avatars</div>
+            </Link>
         </div>
 
     )

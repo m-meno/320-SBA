@@ -9,6 +9,3 @@ Well documented ReadMe
 Multiple Commits. 12-15 minimum
 CSS Styling
 Presentation
-
-API key = Ej9DCdk9M8bsPFYkwgdIKl9sWTiU1y59bipZi10r9FnIj2Ayoq
-API secret = aFtlc5nFokxLwqOdRh0EMKIJ93UgfvtJzjfODwI4

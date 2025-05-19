@@ -4,6 +4,7 @@ import {Routes, Route} from "react-router-dom";
 import axios from "axios";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
+import Avatars from './pages/Avatars';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <Nav/>
     <Routes>
         <Route path="/api/v1/characters" element={<Home/>}/> 
+        <Route path="/api/v1/characters/avatar" element={<Avatars/>}/>
     </Routes>
     </>
   )
