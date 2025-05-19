@@ -12,7 +12,7 @@ export default function Home(){
       const res = await axios(url);
       let data = res.data;
       setCharacters(data)
-      //console.log(data)
+      console.log(data)
     } catch(err) {
       console.error(err)
     }  

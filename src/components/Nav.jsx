@@ -9,6 +9,9 @@ export default function Nav(){
             <Link to="api/v1/characters/avatar">
                 <div>Avatars</div>
             </Link>
+            <Link to="api/v1/characters/:id">
+                <div>Character Profile</div>
+            </Link>
         </div>
 
     )
