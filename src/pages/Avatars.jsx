@@ -24,6 +24,7 @@ export default function Avatars() {
     return(
         <>
         <div className="avatar-grid">
+            <h1>Avatars</h1>
             {avatars.map((character)=> <Card key={character._id} character={character}/>)}
         </div>
         </>

@@ -14,6 +14,7 @@ export default function SingleCharacter() {
             const res = await axios(url);
             let data = res.data;
             setSingleCharacter(data)
+            console.log(data)
         } catch (err) {
             console.error(err)
         }
