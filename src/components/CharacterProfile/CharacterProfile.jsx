@@ -24,49 +24,22 @@ export default function CharacterProfile({ singleCharacter }) {
                 return <p>No allies listed.</p>
             }
         } else {
-            <p>No ally data available.</p>
+            return <p>No ally data available.</p>
         }
     };
-
-
-
-    //     if (singleCharacter.enemies == []){
-    //         if (singleCharacter.enemies.length > 1){
-    //             return singleCharacter.enemies.map((enemy, index)=> <li key={index}>{enemy}</li>);
-    //         } else if (singleCharacter.enemies.length === 1) {
-    //             return <li>{singleCharacter.enemies[0]}</li>
-    //         } else if (singleCharacter.enemies.length == 0)  {
-    //             return <p>No enemies</p>
-    //         }
-    //     } else {
-    //         return `Not an array`
-    //     }
-    //  };
-
-    // function allies(){
-    //     if (singleCharacter.allies == []){
-    //         if (singleCharacter.allies.length > 1){
-    //             return singleCharacter.allies.map((ally, index)=> <li key={index}>{ally}</li>);
-    //         } else if (singleCharacter.allies.length === 1) {
-    //             return <li>{singleCharacter.allies[0]}</li>
-    //         } else {
-    //             return <p>No allies</p>
-    //         }
-    //     } else {
-    //         return `Not an array`
-    //     }
-
 
     return (
         <>
             <div className="character-profile">
                 <img className={styles.img} src={singleCharacter.photoUrl} />
-                <h2>{singleCharacter.name}</h2>
-                <div className={styles.info}>   
-                    <h3>Affiliation: {singleCharacter.affiliation}</h3>
-                    <ul>Enemies:{enemies()}</ul>
-                    <ul>Allies:{allies()}</ul>
-                    </div>     
+                <div className={styles.name}>
+                    <h2>{singleCharacter.name}</h2>
+                </div>
+            <div className={styles.info}>   
+                {singleCharacter.affiliation ? (<p><b>Affiliation:</b> {singleCharacter.affiliation}</p>) : null }
+                <ul><b>Enemies:</b>{enemies()}</ul><br/>
+                <ul><b>Allies:</b>{allies()}</ul>
+            </div>     
             </div>
 
         </>
