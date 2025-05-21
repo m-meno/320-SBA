@@ -1,7 +1,7 @@
 import './App.css';
 import {Routes, Route, useLocation} from "react-router-dom";
 import Home from "./pages/Home/Home"
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import Avatars from './pages/Avatars';
 import SingleCharacter from './pages/SingleCharacter';
 import FireNation from './pages/FireNation';

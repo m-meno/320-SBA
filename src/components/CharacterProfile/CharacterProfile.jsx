@@ -60,11 +60,13 @@ export default function CharacterProfile({ singleCharacter }) {
     return (
         <>
             <div className="character-profile">
-                <img src={singleCharacter.photoUrl} />
-                <h1>{singleCharacter.name}</h1>
-                <h3>Affiliation: {singleCharacter.affiliation}</h3>
-                <ul>Enemies:{enemies()}</ul>
-                <ul>Allies:{allies()}</ul>
+                <img className={styles.img} src={singleCharacter.photoUrl} />
+                <h2>{singleCharacter.name}</h2>
+                <div className={styles.info}>   
+                    <h3>Affiliation: {singleCharacter.affiliation}</h3>
+                    <ul>Enemies:{enemies()}</ul>
+                    <ul>Allies:{allies()}</ul>
+                    </div>     
             </div>
 
         </>

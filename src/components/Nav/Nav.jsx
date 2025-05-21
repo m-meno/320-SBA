@@ -1,4 +1,5 @@
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
+import styles from "./Nav.module.css";
 
 export default function Nav(){
     const navigate = useNavigate();
@@ -18,11 +19,11 @@ export default function Nav(){
     }
      
     return(
-        <div>
-            <Link to="/api/v1/characters" style ={{color: 'black'}}>
+        <div className={styles.nav}>
+            <Link to="/api/v1/characters">
                 <div>Home</div>
             </Link>
-            <Link to="api/v1/characters/avatar" style ={{color: 'black', fontWeight: 'bold'}}>
+            <Link to="api/v1/characters/avatar">
                 <div>Avatars</div>
             </Link>
             <select onChange={handleChange}> 
