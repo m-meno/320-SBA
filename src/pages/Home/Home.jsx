@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
-import Card from "../../components/Card";
+import Card from "../../components/Card/Card"
 import axios from "axios";
-import styles from "./Home.modules.css"
+import styles from "./Home.module.css"
 
 export default function Home(){
     const [characters, setCharacters] = useState([]);

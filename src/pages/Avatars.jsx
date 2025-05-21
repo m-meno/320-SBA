@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Card from "../components/Card";
+import Card from "../components/Card/Card";
 
 export default function Avatars() {
     const [avatars, setAvatars] = useState([]);

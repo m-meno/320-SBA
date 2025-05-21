@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "./Card.module.css"
 
 export default function Card({character}){
     let endpoint = `/api/v1/characters/${character._id}`;
