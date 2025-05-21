@@ -1,0 +1,9 @@
+.img{
+    border: 10px solid white;
+    margin-top: 2rem;
+}
+
+.name a{
+    color: white;
+    text-decoration: none;
+}

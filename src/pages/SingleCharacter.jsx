@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import {useParams} from "react-router-dom";
-import CharacterProfile from "../components/CharacterProfile";
+import CharacterProfile from "../components/CharacterProfile/CharacterProfile";
 
 
 export default function SingleCharacter() {

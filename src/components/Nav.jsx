@@ -18,11 +18,11 @@ export default function Nav(){
     }
      
     return(
-        <div className="nav">
-            <Link to="/api/v1/characters">
+        <div>
+            <Link to="/api/v1/characters" style ={{color: 'black'}}>
                 <div>Home</div>
             </Link>
-            <Link to="api/v1/characters/avatar">
+            <Link to="api/v1/characters/avatar" style ={{color: 'black', fontWeight: 'bold'}}>
                 <div>Avatars</div>
             </Link>
             <select onChange={handleChange}> 

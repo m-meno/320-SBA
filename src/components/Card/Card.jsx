@@ -6,9 +6,9 @@ export default function Card({character}){
     
     return (
         <>
-        <div className="card">
-            <img src={character.photoUrl}/>
-            <h1><Link to= {endpoint}>{character.name}</Link></h1>
+        <div className={styles.card}>
+            <img className= {styles.img} src={character.photoUrl}/>
+            <h2 className={styles.name}><Link to= {endpoint}>{character.name}</Link></h2>
         </div>
         </>
     )

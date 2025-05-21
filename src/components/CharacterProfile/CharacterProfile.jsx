@@ -1,3 +1,5 @@
+import styles from "./CharacterProfile.module.css"
+
 export default function CharacterProfile({ singleCharacter }) {
     // There's probably a much better way to handle this, but I was having trouble rendering this component because the .enemies and .allies properties are arrays of different lengths, and when I tried to use .map()
     // on an empty array I would have issues
