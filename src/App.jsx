@@ -4,10 +4,6 @@ import Home from "./pages/Home/Home"
 import Nav from "./components/Nav/Nav";
 import Avatars from './pages/Avatars';
 import Character from './pages/Character';
-// import FireNation from './pages/FireNation';
-// import AirNomad from "./pages/AirNomad";
-// import EarthKingdom from "./pages/EarthKingdom";
-// import WaterTribe from "./pages/WaterTribe";
 
 function App() {
 

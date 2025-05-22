@@ -26,7 +26,6 @@ ul{
     max-width: 23rem;
     text-align: center;
     background-color: rgb(245, 243, 241);
-    /* border: solid rgb(56, 53, 53) 5px; */
     border-radius: 10px;
     padding: 8px 20px 25px 20px;
    
@@ -41,8 +40,3 @@ ul{
     padding: 2rem;
 }
 
-/* .name{
-    max-width: 100px;
-    align-items: center;
-    display: flex;
-} */

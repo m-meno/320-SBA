@@ -3,14 +3,17 @@ import axios from "axios";
 import Card from "../components/Card/Card";
 
 export default function Avatars() {
+    // initialize state to store avatar data
     const [avatars, setAvatars] = useState([]);
 
     //fetches data for avatar characters
     async function getAllAvatars() {
         try {
+            // defines endpoint for all avatar characters
             let url = `https://last-airbender-api.fly.dev/api/v1/characters/avatar`
             const res = await axios(url)
             let data = res.data;
+            // update the avatars state with the fetched data
             setAvatars(data)
 
         } catch (err) {

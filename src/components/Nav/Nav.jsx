@@ -1,22 +1,8 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Nav.module.css";
 
 export default function Nav(){
-    const navigate = useNavigate();
-
-    const nation = {
-
-        'watertribe': 'water+tribe',
-        'earthkingdom': 'earth+kingdom',
-        'firenation': 'fire+nation',
-        'airnomads': 'air+nomads'
-
-    }
-
-    function handleChange(e){
-        const selectedNation = e.target.value
-        navigate(`/api/v1/characters?affiliation=${nation[selectedNation]}`)
-    }
+  
      
     return(
         <div className={styles.nav}>
@@ -26,12 +12,6 @@ export default function Nav(){
             <Link to="api/v1/characters/avatar">
                 <div>Avatars</div>
             </Link>
-            <select onChange={handleChange}> 
-                <option value="watertribe">Water Tribe</option>
-                <option value="firenation">Fire Nation</option>
-                <option value="earthkingdom">Earth Kingdom</option>
-                <option value="airnomads">Air Nomads</option>
-            </select>
         </div>
 
     )

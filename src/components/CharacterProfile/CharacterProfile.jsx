@@ -1,9 +1,10 @@
 import styles from "./CharacterProfile.module.css"
 
 export default function CharacterProfile({ singleCharacter }) {
-    // There's probably a much better way to handle this, but I was having trouble rendering this component because the .enemies and .allies properties are arrays of different lengths, and when I tried to use .map()
-    // on an empty array I would have issues
-
+    
+    // functions to check if the enemies and allies properties are arrays.
+    // If so, maps over them to create a list item for each enemy/ally.
+    // Returns message if empty or if not an array
     function enemies() {
         if (Array.isArray(singleCharacter.enemies)) {
             if (singleCharacter.enemies.length > 0) {
@@ -12,7 +13,7 @@ export default function CharacterProfile({ singleCharacter }) {
                 return <p>No enemies.</p>
             }
         } else {
-            return <p>No enemy data available.</p>
+            return console.log(`Not an array`)
         }
     };
 
@@ -24,7 +25,7 @@ export default function CharacterProfile({ singleCharacter }) {
                 return <p>No allies listed.</p>
             }
         } else {
-            return <p>No ally data available.</p>
+            return console.log(`Not an array`)
         }
     };
 
@@ -34,6 +35,8 @@ export default function CharacterProfile({ singleCharacter }) {
                 <img className={styles.img} src={singleCharacter.photoUrl} />
                 <h2>{singleCharacter.name}</h2>
             <div className={styles.info}>   
+                {/* Ternary to if character has an affiliation.
+                If true, displays affiliation in a paragraph */}
                 {singleCharacter.affiliation ? (<p><b>Affiliation:</b> {singleCharacter.affiliation}</p>) : null }
                 <ul><b>Enemies:</b>{enemies()}</ul><br/>
                 <ul><b>Allies:</b>{allies()}</ul>

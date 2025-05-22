@@ -1,26 +1,35 @@
-// import { useState } from "react";
+// Commented out because the dropdown menu is not functional yet
+
+// import { useNavigate } from "react";
 
 
 // export default function Dropdown(){
-//     const [nation, setNation] = useState(null);
+//    // const navigate = useNavigate();
 
-  
+    // const nation = {
 
-//     function handleChange(e){
-//         setNation(e.target.value)
+    //     'watertribe': 'water+tribe',
+    //     'earthkingdom': 'earth+kingdom',
+    //     'firenation': 'fire+nation',
+    //     'airnomads': 'air+nomads'
 
+    // }
+
+//      function handleChange(e){
+//      const selectedNation = e.target.value
+//     navigate(`/api/v1/characters?affiliation=${nation[selectedNation]}`)
 //     }
 
 //     return(
 //         <>
 //         <select>
-//             <option value="watertribe"><Link to="api/v1/characters?affiliation=water+tribe">Water Tribe</Link></option>
-//             <option value="firenation"><Link to="api/v1/characters?affiliation=fire+nation">Fire Nation</Link></option>
-//             <option value="earthkingdom"><Link to="api/v1/characters?affiliation=earth+kingdom">Earth Kingdom</Link></option>
-//             <option value="earthkingdom"><Link to="api/v1/characters?affiliation=air+nomads">Air Nomads</Link></option>
-//         </select>
-        
-        
+           {/* Commented out because the dropdown menu is not functional yet */}
+            {/* <select onChange={handleChange}> 
+                <option value="watertribe">Water Tribe</option>
+                <option value="firenation">Fire Nation</option>
+                <option value="earthkingdom">Earth Kingdom</option>
+                <option value="airnomads">Air Nomads</option>
+            </select> */}      
 //         </>
 //     )
 // }

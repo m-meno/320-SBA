@@ -4,14 +4,17 @@ import axios from "axios";
 import styles from "./Home.module.css"
 
 export default function Home(){
-    const [characters, setCharacters] = useState([]);
+  // initialize state to store character data
+  const [characters, setCharacters] = useState([]);
 
   //function to retrieve all characters using axios request  
   async function getAllCharacters(){
     try{
+      //defines endpoint for all characters
       let url = `https://last-airbender-api.fly.dev/api/v1/characters`;
       const res = await axios(url);
       let data = res.data;
+      // updates characters state with fetched data
       setCharacters(data)
       console.log(data)
     } catch(err) {
