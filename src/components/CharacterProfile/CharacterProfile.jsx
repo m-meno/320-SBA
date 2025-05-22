@@ -4,13 +4,13 @@ export default function CharacterProfile({ singleCharacter }) {
     
     // functions to check if the enemies and allies properties are arrays.
     // If so, maps over them to create a list item for each enemy/ally.
-    // Returns message if empty or if not an array
+    // Returns message if empty 
     function enemies() {
         if (Array.isArray(singleCharacter.enemies)) {
             if (singleCharacter.enemies.length > 0) {
                 return singleCharacter.enemies.map((enemy, index) => <li key={index}>{enemy}</li>);
             } else {
-                return <p>No enemies.</p>
+                return <li>No enemies.</li>
             }
         } else {
             return console.log(`Not an array`)
@@ -22,7 +22,7 @@ export default function CharacterProfile({ singleCharacter }) {
             if (singleCharacter.allies.length > 0) {
                 return singleCharacter.allies.map((ally, index) => <li key={index}>{ally}</li>);
             } else {
-                return <p>No allies listed.</p>
+                return <li>No allies.</li>
             }
         } else {
             return console.log(`Not an array`)
