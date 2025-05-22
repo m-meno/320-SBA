@@ -5,6 +5,7 @@ import Card from "../components/Card/Card";
 export default function Avatars() {
     const [avatars, setAvatars] = useState([]);
 
+    //fetches data for avatar characters
     async function getAllAvatars() {
         try {
             let url = `https://last-airbender-api.fly.dev/api/v1/characters/avatar`
@@ -16,7 +17,8 @@ export default function Avatars() {
             console.error(err)
         }
     }
-
+    
+    //runs getAllAvatars when the component loads 
     useEffect(()=>{
         getAllAvatars()
     }, []);
@@ -25,6 +27,7 @@ export default function Avatars() {
         <>
         <div className="avatar-grid">
             <h1>Avatars</h1>
+            {/* map over the avatar array and create a card component for each character */}
             {avatars.map((character)=> <Card key={character._id} character={character}/>)}
         </div>
         </>

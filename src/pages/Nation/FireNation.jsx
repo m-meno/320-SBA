@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import Card from "../components/Card/Card";
+import Card from "../../components/Card/Card";
 import axios from "axios"
 
 export default function FireNation(){

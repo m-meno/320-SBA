@@ -32,9 +32,7 @@ export default function CharacterProfile({ singleCharacter }) {
         <>
             <div className="character-profile">
                 <img className={styles.img} src={singleCharacter.photoUrl} />
-                <div className={styles.name}>
-                    <h2>{singleCharacter.name}</h2>
-                </div>
+                <h2>{singleCharacter.name}</h2>
             <div className={styles.info}>   
                 {singleCharacter.affiliation ? (<p><b>Affiliation:</b> {singleCharacter.affiliation}</p>) : null }
                 <ul><b>Enemies:</b>{enemies()}</ul><br/>
